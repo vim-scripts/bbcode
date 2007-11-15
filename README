@@ -1,0 +1,16 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2070
+
+This plugin includes a syntax highlighting for bbcode and some code 
+skeletons for use with tSkeleton (vimscript #1160).
+
+If viki (vimscript #861) >= 304 is installed, tex regions will be 
+properly highlighted too.
+
+If you use tSkeleton < 403, you might also want to set these variables:
+
+    let g:tskelKeyword_bbcode = '\(\[\*\|[\[\\][*[:alnum:]]\{-}\)'
+    let g:tskelBitGroup_bbcode = ['bbcode', 'tex']
+
+The basic syntax file can also be used without any of these add-ons.
+
+
