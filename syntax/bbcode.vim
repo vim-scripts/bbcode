@@ -3,8 +3,8 @@
 " @Website:     http://www.vim.org/account/profile.php?user_id=4037
 " @License:     GPL (see http://www.gnu.org/licenses/gpl.txt)
 " @Created:     2007-11-15.
-" @Last Change: 2007-11-15.
-" @Revision:    0.1.48
+" @Last Change: 2007-11-17.
+" @Revision:    0.2.50
 
 if version < 600
     syntax clear
@@ -16,6 +16,8 @@ if version < 508
 else
     command! -nargs=+ HiLink hi def link <args>
 endif
+
+syn case ignore
 
 syn region bbcodeTag matchgroup=Delimiter start=/\[\z(.\{-}\)\(=.\{-}\)\?\]/ end=/\[\/\z1\]/
 syn region bbcodeBold matchgroup=Delimiter start=/\[b\]/ end=/\[\/b\]/
